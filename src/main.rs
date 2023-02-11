@@ -16,9 +16,9 @@ use fermium::prelude::*;
 fn main() {
     let sdl = Sdl::init(InitFlags::EVERYTHING);
 
-    // use openGL 2.0
-    sdl.set_gl_context_major_version(2).unwrap();
-    sdl.set_gl_context_minor_version(0).unwrap();
+    // use openGL 3.3
+    sdl.set_gl_context_major_version(3).unwrap();
+    sdl.set_gl_context_minor_version(3).unwrap();
 
     let win = sdl
         .create_gl_window(CreateWinArgs {
